@@ -12,6 +12,7 @@ import (
 
 func ReadImage(path string) image.Image {
 	inputFile, err := os.Open(path)
+	//error checking for input
 	if err != nil {
 		panic(err)
 	}
@@ -28,6 +29,8 @@ func ReadImage(path string) image.Image {
 
 func WriteImage(path string, img image.Image) {
 	outputFile, err := os.Create(path)
+
+	//error handling for image output
 	if err != nil {
 		panic(err)
 	}
@@ -35,6 +38,8 @@ func WriteImage(path string, img image.Image) {
 
 	// Encode the image to the new file
 	err = jpeg.Encode(outputFile, img, nil)
+
+	//error handling for image output
 	if err != nil {
 		panic(err)
 	}
