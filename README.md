@@ -1,4 +1,4 @@
-This repository work cloning the [go routines pipeline respoitory](https://github.com/code-heim/go_21_goroutines_pipeline) at code_heim. additional work was done to add unit testing, benchmark methods to test the if the process runs faster with or without goroutines with custom images.
+This work is from cloning the [go routines pipeline respoitory](https://github.com/code-heim/go_21_goroutines_pipeline) at code_heim. Additional work was done to add unit testing, benchmark methods to test the if the process runs faster with or without goroutines with custom images.
 
 Clone the repository and type 'go run main.go' in the terminal to run the program.
 
